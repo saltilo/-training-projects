@@ -144,12 +144,11 @@ def spin_round(balance):
     winnings, winnings_lines = check_win(slots, lines, bet, symbols_values)
 
     if winnings == 0:
-        print("Увы, не повезло.")
+        print("Увы, не повезло")
     else:
         print(f"Твой выигрыш {winnings}֏")
         print(f"Выигрыш произошел на линии:", *winnings_lines)
 
-    # Возвращать баланс после выигрыша или проигрыша
     return balance + winnings - total_bet
 
 
